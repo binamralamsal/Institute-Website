@@ -6,7 +6,7 @@
   <div class="container about-container even-columns">
     <div class="images">
       <div class="row-1">
-        <div class="row__image-1-container">
+        <div class="row__image-1-container" data-aos="fade-right">
           <div class="row__icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -27,12 +27,7 @@
               />
             </svg>
           </div>
-          <img
-            src="/home/about-image-1.jpg"
-            class="image-1"
-            alt=""
-            data-aos="fade-right"
-          />
+          <img src="/home/about-image-1.jpg" class="image-1" alt="" />
         </div>
         <img
           src="/home/about-image-2.jpg"
@@ -160,26 +155,28 @@
         </div>
       </div>
 
-      <Button href="/about" data-aos="fade-up" data-aos-delay="700">
-        <span> Learn More </span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="icon icon-tabler icon-tabler-arrow-right"
-          width="18"
-          height="18"
-          viewBox="0 0 24 24"
-          stroke-width="2"
-          stroke="currentColor"
-          fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <line x1="5" y1="12" x2="19" y2="12" />
-          <line x1="13" y1="18" x2="19" y2="12" />
-          <line x1="13" y1="6" x2="19" y2="12" />
-        </svg>
-      </Button>
+      <div data-aos="fade-up" data-aos-delay="700">
+        <Button href="/about">
+          <span> Learn More </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-arrow-right"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <line x1="13" y1="18" x2="19" y2="12" />
+            <line x1="13" y1="6" x2="19" y2="12" />
+          </svg>
+        </Button>
+      </div>
     </div>
   </div>
 </section>
@@ -215,6 +212,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    padding: 1rem;
     gap: 1rem;
   }
 
@@ -339,7 +337,7 @@
   }
 
   .features {
-    gap: 2rem;
+    gap: 1rem;
     margin-bottom: 2rem;
   }
 
