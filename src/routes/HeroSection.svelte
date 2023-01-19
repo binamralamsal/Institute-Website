@@ -1,3 +1,7 @@
+<script>
+  import Button from "$lib/components/Button.svelte";
+</script>
+
 <section class="hero-section" aria-labelledby="hero-title">
   <div class="container hero-container even-columns">
     <div>
@@ -18,6 +22,27 @@
         It is long established that a reader will be distracted by the readable
         popular and best content.
       </p>
+
+      <Button href="/about" data-aos="fade-up" data-aos-delay="450">
+        <span> Learn More </span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-arrow-right"
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <line x1="5" y1="12" x2="19" y2="12" />
+          <line x1="13" y1="18" x2="19" y2="12" />
+          <line x1="13" y1="6" x2="19" y2="12" />
+        </svg>
+      </Button>
     </div>
     <div class="right-images">
       <img
@@ -77,7 +102,6 @@
     font-size: var(--fs-900);
     font-weight: var(--fw-800);
     color: var(--clr-accent-900);
-    margin-bottom: 1.875rem;
     line-height: 1.25;
     max-width: 13ch;
   }
@@ -85,6 +109,7 @@
   .caption {
     font-size: var(--fs-500);
     line-height: 2em;
+    margin: 1.875rem 0;
     max-width: 45ch;
   }
 
@@ -93,11 +118,11 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    height: 85%;
+    height: 80%;
   }
 
   .girl-bg {
-    height: 75%;
+    height: 65%;
   }
 
   .right-images::before {

@@ -117,10 +117,12 @@
     font-weight: var(--fw-600);
   }
 
-  .nav-link:hover,
-  .nav-link:focus,
   .nav-link.active {
     color: var(--clr-accent-400);
+  }
+
+  .nav-link:hover {
+    color: var(--clr-accent-600);
   }
 
   .mobile-nav-toggle {
