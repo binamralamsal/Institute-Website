@@ -81,6 +81,10 @@
     animation: headerSticky 0.95s ease forwards;
   }
 
+  .navbar-wrapper.transparent.scrolled {
+    position: fixed;
+  }
+
   @keyframes headerSticky {
     from {
       transform: translateY(-100%);
@@ -108,6 +112,7 @@
     display: inline-block;
     transition: color 0.2s ease;
     color: var(--clr-neutral-400);
+    font-weight: var(--fw-600);
   }
 
   .nav-link:hover,

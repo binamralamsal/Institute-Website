@@ -1,0 +1,48 @@
+:root {
+  --clr-accent-400: hsl(219, 87%, 51%);
+  --clr-accent-900: hsl(219, 87%, 15%);
+
+  --clr-neutral-400: hsl(0, 0%, 20%);
+
+  --fs-400: 1rem;
+  --fs-500: 1.25rem;
+  --fs-900: 4.25rem;
+
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-800: 800;
+
+  --fs-body: var(--fs-400);
+  --fw-body: var(--fw-500);
+}
+
+body {
+  color: var(--clr-neutral-400);
+  font-family: "Urbanist", sans-serif;
+  font-size: var(--fs-body);
+  font-weight: var(--fw-500);
+}
+
+/* Utility Classes */
+.container {
+  --max-width: 1110px;
+  --container-padding: 1rem;
+  width: min(var(--max-width), 100% - (var(--container-padding) * 2));
+  margin-inline: auto;
+}
+
+.color-accent {
+  color: var(--clr-accent-400);
+}
+
+.even-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 48em) {
+  :root {
+    --fs-900: 3rem;
+  }
+}

@@ -1,8 +1,10 @@
-<main />
+<script>
+  import HeroSection from "./HeroSection.svelte";
+</script>
+
+<main>
+  <HeroSection />
+</main>
 
 <style>
-  main {
-    height: 1000px;
-    background-color: red;
-  }
 </style>

@@ -1,7 +1,7 @@
 <script lang="ts">
-  import Navbar from "./Navbar.svelte";
-  import "./css-reset.css";
-  import "./styles.css";
+  import { Navbar } from "$lib/components";
+  import "$lib/styles/css-reset.css";
+  import "$lib/styles/styles.css";
 </script>
 
 <Navbar /><slot />
