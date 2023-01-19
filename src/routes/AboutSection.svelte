@@ -27,11 +27,21 @@
               />
             </svg>
           </div>
-          <img src="/home/about-image-1.jpg" class="image-1" alt="" />
+          <img
+            src="/home/about-image-1.jpg"
+            class="image-1"
+            alt=""
+            data-aos="fade-right"
+          />
         </div>
-        <img src="/home/about-image-2.jpg" class="image-2" alt="" />
+        <img
+          src="/home/about-image-2.jpg"
+          class="image-2"
+          alt=""
+          data-aos="fade-right"
+        />
       </div>
-      <div class="row-2">
+      <div class="row-2" data-aos="fade-right" data-aos-delay="150">
         <div class="students-count">
           <div class="count__icon">
             <svg
@@ -65,12 +75,17 @@
     <div class="about-description">
       <header>
         <span class="pre-title color-accent" data-aos="fade-up">About us</span>
-        <h2 class="title" id="about-title" data-aos="fade-up">
+        <h2
+          class="title"
+          id="about-title"
+          data-aos="fade-up"
+          data-aos-delay="150"
+        >
           Creating A Community Of Life Long Learners
         </h2>
       </header>
 
-      <p class="caption">
+      <p class="caption" data-aos="fade-up" data-aos-delay="300">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc null
         liobortis nibh porttitor. Facilisi arcu, nibh vel risus, morbi pharetra.
         Facilisi sit miam mauris non iaculis elit fusce amet nunc in odio
@@ -79,7 +94,7 @@
 
       <div class="features even-columns">
         <div class="feature">
-          <div class="feature__icon">
+          <div class="feature__icon" data-aos="fade-up" data-aos-delay="450">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-device-laptop"
@@ -99,8 +114,14 @@
           </div>
 
           <div class="feature__content">
-            <h3 class="feature__title">Flexible Classes</h3>
-            <p class="feature__description">
+            <h3 class="feature__title" data-aos="fade-up" data-aos-delay="450">
+              Flexible Classes
+            </h3>
+            <p
+              class="feature__description"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
               There are many variations of passages of the Ipsum available for
               now
             </p>
@@ -108,7 +129,7 @@
         </div>
 
         <div class="feature">
-          <div class="feature__icon">
+          <div class="feature__icon" data-aos="fade-up" data-aos-delay="450">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-school"
@@ -128,8 +149,10 @@
           </div>
 
           <div class="feature__content">
-            <h2 class="feature__title">Educator Support</h2>
-            <p class="feature__caption">
+            <h2 class="feature__title" data-aos="fade-up" data-aos-delay="450">
+              Educator Support
+            </h2>
+            <p class="feature__caption" data-aos="fade-up" data-aos-delay="600">
               There are many variations of passages of the Ipsum available for
               now
             </p>
@@ -137,7 +160,7 @@
         </div>
       </div>
 
-      <Button href="/about">
+      <Button href="/about" data-aos="fade-up" data-aos-delay="700">
         <span> Learn More </span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -245,6 +268,7 @@
   }
 
   .row__icon {
+    z-index: 999;
     padding: 0.75rem;
     border-radius: 100%;
     position: absolute;

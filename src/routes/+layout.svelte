@@ -9,7 +9,7 @@
   import Aos from "aos";
 
   onMount(() => {
-    Aos.init({ once: true, duration: 1000 });
+    Aos.init({ once: true, duration: 750 });
   });
 </script>
 
