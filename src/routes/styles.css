@@ -1,0 +1,15 @@
+:root {
+  --clr-accent-400: hsl(219, 87%, 51%);
+  --clr-neutral-400: hsl(0, 0%, 10%);
+}
+
+body {
+  color: var(--clr-neutral-400);
+}
+
+/* Utility Classes */
+.container {
+  padding-inline: clamp(0.25rem, 0.25vw, 1rem);
+  max-width: clamp(16rem, 95vw, 85rem);
+  margin-inline: auto;
+}
