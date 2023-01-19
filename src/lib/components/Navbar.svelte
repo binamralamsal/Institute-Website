@@ -15,7 +15,7 @@
 
 <header class="navbar-wrapper transparent" class:scrolled>
   <div class="container nav-container">
-    <a href="/">Kodilearn</a>
+    <a href="/" data-aos="fade-right">Kodilearn</a>
 
     <button
       class="mobile-nav-toggle"
@@ -34,6 +34,8 @@
       id="primary-navigation"
       class="primary-navigation"
       class:active={navbarOpened}
+      data-aos="fade-left"
+      data-aos-delay="250"
     >
       <ul class="nav-links">
         <li>

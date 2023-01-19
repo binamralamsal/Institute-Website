@@ -2,14 +2,19 @@
   <div class="container hero-container even-columns">
     <div>
       <header>
-        <span class="pre-title color-accent"
+        <span class="pre-title color-accent" data-aos="fade-up"
           >Better learning future with us</span
         >
-        <h1 class="title" id="hero-title">
+        <h1
+          class="title"
+          id="hero-title"
+          data-aos="fade-up"
+          data-aos-delay="150"
+        >
           Committed To Learn Excellence In Education
         </h1>
       </header>
-      <p class="caption">
+      <p class="caption" data-aos="fade-up" data-aos-delay="300">
         It is long established that a reader will be distracted by the readable
         popular and best content.
       </p>
@@ -19,9 +24,17 @@
         class="girl-image"
         src="/home/girl-thumb.png"
         alt="Girl thumbchecking"
+        data-aos="fade-left"
         height="780"
+        data-aos-delay="450"
       />
-      <img class="girl-bg" src="/home/girl-bg.png" alt="Girl background" />
+      <img
+        class="girl-bg"
+        src="/home/girl-bg.png"
+        data-aos="fade-left"
+        alt="Girl background"
+        data-aos-delay="600"
+      />
     </div>
   </div>
 
