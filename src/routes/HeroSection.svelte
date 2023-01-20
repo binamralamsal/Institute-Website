@@ -105,7 +105,7 @@
     font-weight: var(--fw-800);
     color: var(--clr-accent-900);
     line-height: 1.25;
-    max-width: 13ch;
+    max-width: 15ch;
   }
 
   .caption {
