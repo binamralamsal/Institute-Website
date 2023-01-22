@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { HTMLButtonAttributes } from "svelte/elements";
+  import type {HTMLButtonAttributes} from "svelte/elements";
 
   type Variant = "primary";
 
@@ -13,13 +13,14 @@
 </script>
 
 <svelte:element
-  this={href ? "a" : "button"}
-  class="btn"
-  class:primary={variant === "primary"}
-  {href}
-  {...$$restProps}
+        {...$$restProps}
+        class="btn"
+        class:primary={variant === "primary"}
+        {href}
+        this={href ? "a" : "button"}
 >
-  <slot /></svelte:element
+  <slot/>
+</svelte:element
 >
 
 <style>
@@ -27,7 +28,6 @@
     background: none;
     border: none;
     text-decoration: none;
-    display: inline-block;
     padding: 0.75em 1.875em;
     color: var(--clr-neutral-400);
     border-radius: 0.3125em;
