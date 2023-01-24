@@ -14,8 +14,8 @@
         <h2 class="title" id="features-title">We Offer The Best Carrier</h2>
       </header>
 
-      <div class="services">
-        <div class="service" data-aos="fade-up" data-aos-delay="100">
+      <ul class="services">
+        <li class="service" data-aos="fade-up" data-aos-delay="100">
           <div class="service__icon"><Idea /></div>
           <div class="service__content">
             <h3 class="service__title">Earn Money with Unique Projects</h3>
@@ -24,9 +24,9 @@
               can earn money.
             </p>
           </div>
-        </div>
+        </li>
 
-        <div class="service" data-aos="fade-up" data-aos-delay="200">
+        <li class="service" data-aos="fade-up" data-aos-delay="200">
           <div class="service__icon"><Money /></div>
           <div class="service__content">
             <h3 class="service__title">Freelancing for profit</h3>
@@ -35,9 +35,9 @@
               instructors.
             </p>
           </div>
-        </div>
+        </li>
 
-        <div class="service" data-aos="fade-up" data-aos-delay="300">
+        <li class="service" data-aos="fade-up" data-aos-delay="300">
           <div class="service__icon"><Journey /></div>
           <div class="service__content">
             <h3 class="service__title">Experience and learn at Journey</h3>
@@ -46,9 +46,9 @@
               certificate upon completion.
             </p>
           </div>
-        </div>
+        </li>
 
-        <div class="service" data-aos="fade-up" data-aos-delay="400">
+        <li class="service" data-aos="fade-up" data-aos-delay="400">
           <div class="service__icon"><Resources /></div>
           <div class="service__content">
             <h3 class="service__title">Boost your learning with resources</h3>
@@ -57,8 +57,8 @@
               to enhance your knowledge.
             </p>
           </div>
-        </div>
-      </div>
+        </li>
+      </ul>
 
       <div class="features-btn" data-aos="fade-up" data-aos-delay="500">
         <Button href="#">
@@ -177,6 +177,7 @@
   .service__icon {
     align-self: flex-start;
     border-radius: 100%;
+    display: flex;
     background: hsla(204, 100%, 55%, 0.1);
     padding: 0.75rem;
   }

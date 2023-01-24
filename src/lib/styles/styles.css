@@ -28,6 +28,10 @@
   --fw-body: var(--fw-500);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--clr-neutral-400);
   font-family: "Lexend", sans-serif;

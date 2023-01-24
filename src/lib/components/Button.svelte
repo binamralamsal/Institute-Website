@@ -1,14 +1,17 @@
 <script lang="ts">
   import type { HTMLButtonAttributes } from "svelte/elements";
 
-  type Variant = "primary";
+  type Variant = "primary" | "dark-primary";
+  type Size = "default" | "large";
 
   export let href: string | undefined = undefined;
   export let variant: Variant = "primary";
+  export let size: Size = "default";
 
   interface $$Props extends HTMLButtonAttributes {
     href?: string | undefined;
     variant?: Variant;
+    size?: Size;
   }
 </script>
 
@@ -17,6 +20,8 @@
   {...$$restProps}
   class:btn={true}
   class:primary={variant === "primary"}
+  class:dark-primary={variant === "dark-primary"}
+  class:large={size === "large"}
   {href}
 >
   <slot />
@@ -39,12 +44,19 @@
     gap: 0.5rem;
   }
 
-  .primary {
+  .large {
+    padding: 1em 2em;
+  }
+
+  .primary,
+  .dark-primary:hover {
     background: var(--clr-accent-400);
     color: var(--clr-neutral-100);
   }
 
-  .primary:hover {
+  .primary:hover,
+  .dark-primary {
+    color: var(--clr-neutral-100);
     background: var(--clr-accent-600);
   }
 </style>
