@@ -203,7 +203,7 @@
   .title {
     font-size: var(--fs-700);
     font-weight: var(--fw-800);
-    color: var(--clr-accent-900);
+    color: var(--clr-heading);
     line-height: 1.4;
   }
 
