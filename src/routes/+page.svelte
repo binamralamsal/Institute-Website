@@ -1,5 +1,6 @@
 <script>
   import AboutSection from "./AboutSection.svelte";
+  import BlogSection from "./BlogSection.svelte";
   import CoursesSection from "./CoursesSection.svelte";
   import EventsSection from "./EventsSection.svelte";
   import FeaturesSection from "./FeaturesSection.svelte";
@@ -14,6 +15,7 @@
   <CoursesSection />
   <FeaturesSection />
   <EventsSection />
+  <BlogSection />
 </main>
 
 <style>

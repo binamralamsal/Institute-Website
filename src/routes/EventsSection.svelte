@@ -97,6 +97,24 @@
     display: flex;
     flex-direction: column;
     gap: 1.875rem;
+    position: relative;
+  }
+
+  .events::before,
+  .events::after {
+    position: absolute;
+  }
+
+  .events::before {
+    content: url("/home/events-decoration-1.png");
+    right: -4%;
+    top: -6%;
+  }
+
+  .events::after {
+    content: url("/home/events-decoration-2.png");
+    right: -10%;
+    bottom: -10%;
   }
 
   @media screen and (max-width: 48em) {
@@ -106,6 +124,11 @@
 
     .main-title {
       margin-bottom: 2rem;
+    }
+
+    .events::before,
+    .events::after {
+      display: none;
     }
   }
 </style>
