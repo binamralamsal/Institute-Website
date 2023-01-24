@@ -174,10 +174,4 @@
       gap: 0.7rem;
     }
   }
-
-  @media screen and (max-width: 40em) {
-    .card {
-      padding: 0.75rem;
-    }
-  }
 </style>
