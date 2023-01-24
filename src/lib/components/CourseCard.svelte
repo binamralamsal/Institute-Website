@@ -87,13 +87,12 @@
 <style>
   .card {
     padding: 1.25rem;
-    background: var(--clr-shade);
     border-radius: var(--radius-400);
+    border: 1px solid #eee;
     transition: 0.4s;
   }
 
   .card:hover {
-    background: white;
     box-shadow: 0 10px 30px rgb(0 0 0 / 6%);
   }
 
@@ -155,14 +154,19 @@
 
   .enroll-btn {
     font-weight: var(--fw-600);
+    align-self: flex-start;
     display: flex;
     align-items: center;
-    transition: gap 0.2s;
     gap: 0.25rem;
+    background: linear-gradient(currentColor 0 0) var(--p, 0) 100% / var(--d, 0)
+      3px no-repeat;
+    transition: 0.3s, background-position 0s 0.3s;
   }
 
   .enroll-btn:hover {
-    gap: 0.5rem;
+    color: var(--clr-accent-400);
+    --d: 100%;
+    --p: 100%;
   }
 
   @media screen and (max-width: 65em) {
