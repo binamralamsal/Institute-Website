@@ -7,6 +7,7 @@
 
   import { onMount } from "svelte";
   import Aos from "aos";
+  import Footer from "$lib/components/Footer.svelte";
 
   onMount(() => {
     Aos.init({ once: true, duration: 750 });
@@ -14,3 +15,4 @@
 </script>
 
 <Navbar /><slot />
+<Footer />
