@@ -1,4 +1,5 @@
 <script>
+  import { Idea, Money, Journey, Resources } from "$lib/assets/icons";
   import Button from "$lib/components/Button.svelte";
 </script>
 
@@ -15,7 +16,7 @@
 
       <div class="services">
         <div class="service" data-aos="fade-up" data-aos-delay="100">
-          <div class="service__icon">asdf</div>
+          <div class="service__icon"><Idea /></div>
           <div class="service__content">
             <h3 class="service__title">Earn Money with Unique Projects</h3>
             <p>
@@ -26,7 +27,7 @@
         </div>
 
         <div class="service" data-aos="fade-up" data-aos-delay="200">
-          <div class="service__icon">asdf</div>
+          <div class="service__icon"><Money /></div>
           <div class="service__content">
             <h3 class="service__title">Freelancing for profit</h3>
             <p>
@@ -37,7 +38,7 @@
         </div>
 
         <div class="service" data-aos="fade-up" data-aos-delay="300">
-          <div class="service__icon">asdf</div>
+          <div class="service__icon"><Journey /></div>
           <div class="service__content">
             <h3 class="service__title">Experience and learn at Journey</h3>
             <p>
@@ -48,7 +49,7 @@
         </div>
 
         <div class="service" data-aos="fade-up" data-aos-delay="400">
-          <div class="service__icon">asdf</div>
+          <div class="service__icon"><Resources /></div>
           <div class="service__content">
             <h3 class="service__title">Boost your learning with resources</h3>
             <p>
@@ -170,12 +171,14 @@
 
   .service {
     display: flex;
-    gap: 1.5625rem;
+    gap: 1rem;
   }
 
   .service__icon {
     align-self: flex-start;
     border-radius: 100%;
+    background: hsla(204, 100%, 55%, 0.1);
+    padding: 0.75rem;
   }
 
   .service__title {
