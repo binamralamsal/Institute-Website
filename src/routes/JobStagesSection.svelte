@@ -1,7 +1,11 @@
 <section class="job-stages-section" aria-labelledby="job-stages-title">
   <div class="container">
     <header>
-      <h2 class="title job-stages-title" data-aos="fade-up">
+      <h2
+        class="title job-stages-title"
+        id="job-stages-title"
+        data-aos="fade-up"
+      >
         Preparing of Success:
         <span>A Guide to Acing Your Job Interviews</span>
       </h2>
@@ -118,7 +122,7 @@
     background: url("/home/job-stages-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
   .title {
@@ -148,24 +152,6 @@
     top: 15%;
     right: -15%;
     animation: top-bottom 4s linear infinite alternate;
-  }
-
-  @keyframes left-right {
-    0% {
-      transform: translateX(-50%);
-    }
-    to {
-      transform: translateX(50%);
-    }
-  }
-
-  @keyframes top-bottom {
-    0% {
-      transform: translateY(-50%);
-    }
-    to {
-      transform: translateY(50%);
-    }
   }
 
   .title span {
@@ -203,7 +189,7 @@
 
   .stage-first .icon {
     position: relative;
-    background: #f86f03;
+    background: hsl(26, 98%, 49%);
   }
 
   .stage-first::before {
@@ -218,7 +204,7 @@
   }
 
   .stage-third .icon {
-    background: #ffa41b;
+    background: hsl(36, 100%, 55%);
   }
 
   .stage-first::after {

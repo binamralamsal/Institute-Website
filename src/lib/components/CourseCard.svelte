@@ -1,0 +1,179 @@
+<script lang="ts">
+  export let course: {
+    image: {
+      alt: string;
+      src: string;
+    };
+    title: string;
+    duration: string;
+    numberOfModules: number;
+  };
+</script>
+
+<div class="card" {...$$restProps}>
+  <a href="/" class="image-link">
+    <img class="image" src={course.image.src} alt={course.image.alt} />
+  </a>
+
+  <div class="description">
+    <header>
+      <a href="/" class="title"> <h3>{course.title}</h3></a>
+    </header>
+
+    <ul class="stats">
+      <li>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-clock"
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0m9 -5l0 5l3 3" />
+        </svg>
+        {course.duration}
+      </li>
+      <li>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-vocabulary"
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path
+            d="M10 19h-6a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1h6a2 2 0 0 1 2 2a2 2 0 0 1 2 -2h6a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-6a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2zm2 -14v16m-5 -14h1m-1 4h1m8 -4h1m-1 4h1m-1 4h1"
+          />
+        </svg>{course.numberOfModules} Modules
+      </li>
+    </ul>
+
+    <hr class="separator" />
+
+    <a href="/" class="enroll-btn"
+      >Enroll Now
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon icon-tabler icon-tabler-arrow-narrow-right"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+        stroke="currentColor"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M5 12l14 0m-4 4l4 -4m-4 -4l4 4" />
+      </svg>
+    </a>
+  </div>
+</div>
+
+<style>
+  .card {
+    padding: 1.25rem;
+    background: var(--clr-shade);
+    border-radius: var(--radius-400);
+    transition: 0.4s;
+  }
+
+  .card:hover {
+    background: white;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 6%);
+  }
+
+  .card:hover .image {
+    transform: scale(1.1);
+  }
+
+  .title:hover {
+    color: var(--clr-accent-400);
+  }
+
+  .image-link {
+    display: block;
+    border-radius: var(--radius-300);
+    overflow: hidden;
+  }
+
+  .image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    object-fit: cover;
+    transition: 0.4s;
+  }
+
+  .description {
+    margin-top: 1.5625rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .title {
+    font-weight: var(--fw-700);
+    color: var(--clr-heading);
+    line-height: 1.4;
+    font-size: 1.25rem;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .stats {
+    list-style-type: none;
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .stats li {
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+  }
+
+  .separator {
+    border: 1px solid #eee;
+  }
+
+  .enroll-btn {
+    font-weight: var(--fw-600);
+    display: flex;
+    align-items: center;
+    transition: gap 0.2s;
+    gap: 0.25rem;
+  }
+
+  .enroll-btn:hover {
+    gap: 0.5rem;
+  }
+
+  @media screen and (max-width: 65em) {
+    .stats {
+      gap: 0.7rem;
+    }
+  }
+
+  @media screen and (max-width: 40em) {
+    .card {
+      padding: 0.75rem;
+    }
+  }
+</style>

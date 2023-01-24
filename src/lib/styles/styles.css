@@ -7,6 +7,9 @@
   --clr-neutral-100: hsl(0, 0%, 100%);
   --clr-neutral-400: hsl(0, 0%, 20%);
 
+  --clr-shade: hsl(0, 0%, 96%);
+  --clr-heading: var(--clr-accent-900);
+
   --fs-400: 1rem;
   --fs-500: 1.25rem;
   --fs-700: 2.5rem;
@@ -17,6 +20,10 @@
   --fw-700: 500;
   --fw-800: 600;
 
+  --radius-300: 0.1875em;
+  --radius-400: 0.3125em;
+  --radius-600: 0.5em;
+
   --fs-body: var(--fs-400);
   --fw-body: var(--fw-500);
 }
@@ -26,6 +33,16 @@ body {
   font-family: "Lexend", sans-serif;
   font-size: var(--fs-body);
   font-weight: var(--fw-500);
+}
+
+a {
+  color: var(--clr-accent-400);
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+a:hover {
+  color: hsl(219, 87%, 15%);
 }
 
 /* Utility Classes */
@@ -40,9 +57,32 @@ body {
   color: var(--clr-accent-400);
 }
 
+.color-heading {
+  color: var(--clr-accent-900);
+}
+
 .even-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+/* Animations */
+@keyframes left-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(50%);
+  }
+}
+
+@keyframes top-bottom {
+  0% {
+    transform: translateY(-50%);
+  }
+  to {
+    transform: translateY(50%);
+  }
 }
 
 @media screen and (max-width: 48em) {

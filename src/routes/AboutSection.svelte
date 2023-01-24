@@ -184,7 +184,7 @@
 <style>
   .about-section {
     padding: 8rem 0;
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
   .about-container {
@@ -296,7 +296,7 @@
     gap: 0.75rem;
     position: absolute;
     box-shadow: 0 10px 25px rgb(0 0 0 / 8%);
-    border-radius: 0.5em;
+    border-radius: var(--radius-600);
     align-items: center;
     animation: bounceSlide 4s infinite;
   }
