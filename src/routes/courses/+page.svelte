@@ -2,6 +2,12 @@
   import CourseCard from "$lib/components/CourseCard.svelte";
 </script>
 
+<svelte:head>
+  <title>
+    Courses | KodiLearn - Committed to Learn Excellence in Education
+  </title>
+</svelte:head>
+
 <section class="course-header">
   <div class="course-container container">
     <h1 class="page-title color-heading" data-aos="fade-up">Courses</h1>
