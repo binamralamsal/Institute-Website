@@ -3,9 +3,9 @@
 </script>
 
 <section class="course-header">
-  <div class="container">
-    <h1 class="page-title color-heading">Courses</h1>
-    <nav class="breadcrumb">
+  <div class="course-container container">
+    <h1 class="page-title color-heading" data-aos="fade-up">Courses</h1>
+    <nav class="breadcrumb" data-aos="fade-right" data-aos-delay="100">
       <ul>
         <li>
           <a href="/">Home</a>
@@ -121,6 +121,7 @@
   .course-header {
     padding: 3.75rem 0;
     background: url("/home/header-bg.jpg");
+    overflow: hidden;
   }
 
   .page-title {
@@ -128,6 +129,56 @@
     font-size: var(--fs-700);
     font-weight: var(--fw-800);
     line-height: 1.4;
+    position: relative;
+  }
+
+  .course-container {
+    position: relative;
+  }
+
+  .course-container::before,
+  .course-container::after,
+  .page-title::before,
+  .page-title::after,
+  .breadcrumb::before,
+  .breadcrumb::after {
+    position: absolute;
+  }
+
+  .course-container::before {
+    content: url("/home/course-decoration-1.png");
+    left: -20%;
+    top: -40%;
+  }
+
+  .course-container::after {
+    content: url("/home/course-decoration-6.png");
+    right: -25%;
+    bottom: -40%;
+  }
+
+  .page-title::before {
+    content: url("/home/course-decoration-2.png");
+    left: -10%;
+    bottom: -130%;
+  }
+
+  .page-title::after {
+    content: url("/home/course-decoration-3.png");
+    left: 30%;
+    bottom: -130%;
+  }
+
+  .breadcrumb::before {
+    content: url("/home/course-decoration-4.png");
+    left: 60%;
+    top: -20%;
+  }
+
+  .breadcrumb::after {
+    content: url("/home/course-decoration-5.png");
+    right: -10%;
+    top: -20%;
   }
 
   ul {
@@ -168,8 +219,21 @@
   }
 
   @media screen and (max-width: 48em) {
+    .course-header {
+      padding: 2rem 0;
+    }
+
     .courses {
       padding: 5rem 0;
+    }
+
+    .course-container::before,
+    .course-container::after,
+    .page-title::before,
+    .page-title::after,
+    .breadcrumb::before,
+    .breadcrumb::after {
+      display: none;
     }
   }
 
