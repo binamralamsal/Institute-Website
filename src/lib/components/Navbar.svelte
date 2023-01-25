@@ -1,5 +1,6 @@
 <script lang="ts">
   import { page } from "$app/stores";
+  import NavLink from "./NavLink.svelte";
 
   let navbarOpened = false;
   let scrolled = false;
@@ -11,6 +12,8 @@
 
     return (scrolled = false);
   };
+
+  const handleToggleNavbar = () => (navbarOpened = !navbarOpened);
 
   const pagesWithTransparentNavbar = ["/"];
 </script>
@@ -31,7 +34,7 @@
       aria-label="toggle navigation"
       class="mobile-nav-toggle"
       class:active={navbarOpened}
-      on:click={() => (navbarOpened = !navbarOpened)}
+      on:click={handleToggleNavbar}
     >
       <span />
       <span />
@@ -47,22 +50,26 @@
     >
       <ul class="nav-links">
         <li>
-          <a class="nav-link active" href="/">Home</a>
+          <NavLink href="/" on:click={handleToggleNavbar}>Home</NavLink>
         </li>
         <li>
-          <a class="nav-link" href="/courses">Courses</a>
+          <NavLink href="/courses" on:click={handleToggleNavbar}>
+            Courses
+          </NavLink>
         </li>
         <li>
-          <a class="nav-link" href="/events">Events</a>
+          <NavLink href="/events" on:click={handleToggleNavbar}>Events</NavLink>
         </li>
         <li>
-          <a class="nav-link" href="/blogs">Blogs</a>
+          <NavLink href="/blogs" on:click={handleToggleNavbar}>Blogs</NavLink>
         </li>
         <li>
-          <a class="nav-link" href="/contact">Contact</a>
+          <NavLink href="/contact" on:click={handleToggleNavbar}>
+            Contact
+          </NavLink>
         </li>
         <li>
-          <a class="nav-link" href="/about">About</a>
+          <NavLink href="/about" on:click={handleToggleNavbar}>About</NavLink>
         </li>
       </ul>
     </nav>
@@ -114,23 +121,6 @@
     list-style-type: none;
     display: flex;
     gap: 0.5rem;
-  }
-
-  .nav-link {
-    padding: 1rem;
-    text-decoration: none;
-    display: inline-block;
-    transition: color 0.2s ease;
-    color: var(--clr-neutral-400);
-    font-weight: var(--fw-600);
-  }
-
-  .nav-link.active {
-    color: var(--clr-accent-400);
-  }
-
-  .nav-link:hover {
-    color: var(--clr-accent-600);
   }
 
   .mobile-nav-toggle {
@@ -191,11 +181,6 @@
 
     .mobile-nav-toggle {
       display: flex;
-    }
-
-    .nav-link {
-      width: 100%;
-      padding: 0.5rem 2rem;
     }
   }
 </style>
