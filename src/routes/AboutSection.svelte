@@ -60,8 +60,8 @@
           </div>
 
           <div class="count__content">
-            <h3 class="count__title">900K</h3>
-            <p class="count__description">Total Students</p>
+            <h3 class="count__title">12</h3>
+            <p class="count__description">Interesting Courses</p>
           </div>
         </div>
         <img src="/home/about-image-3.jpg" class="image-3" alt="" />
@@ -319,7 +319,7 @@
 
   .count__icon {
     padding: 0.75em;
-    background: var(--clr-accent-100);
+    background: var(--clr-accent-400);
     border-radius: 100%;
     color: white;
     display: flex;
