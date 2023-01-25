@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { page } from "$app/stores";
+
   let navbarOpened = false;
   let scrolled = false;
 
@@ -9,11 +11,17 @@
 
     return (scrolled = false);
   };
+
+  const pagesWithTransparentNavbar = ["/"];
 </script>
 
 <svelte:window on:scroll={handleOnScroll} />
 
-<header class="navbar-wrapper transparent" class:scrolled>
+<header
+  class="navbar-wrapper"
+  class:transparent={pagesWithTransparentNavbar.includes($page.url.pathname)}
+  class:scrolled
+>
   <div class="container nav-container">
     <a data-aos="fade-right" href="/">Kodilearn</a>
 

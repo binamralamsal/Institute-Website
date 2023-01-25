@@ -85,7 +85,7 @@
 
       <ul>
         <li><a href="/"><Arrow /> Contact Us</a></li>
-        <li><a href="/"><Arrow /> Popular Courses</a></li>
+        <li><a href="/courses"><Arrow /> Popular Courses</a></li>
         <li><a href="/"><Arrow /> Event Details</a></li>
       </ul>
     </div>
@@ -194,6 +194,24 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2rem;
     row-gap: 4rem;
+    position: relative;
+  }
+
+  .container::before,
+  .container::after {
+    position: absolute;
+  }
+
+  .container::before {
+    content: url("/home/footer-decoration-1.png");
+    left: -25%;
+    top: 20%;
+  }
+
+  .container::after {
+    content: url("/home/footer-decoration-2.png");
+    right: -20%;
+    bottom: 0%;
   }
 
   .title {
@@ -270,11 +288,17 @@
   }
 
   @media screen and (max-width: 50em) {
+    .container::before,
+    .container::after {
+      display: none;
+    }
+
     .website-info {
       grid-column: span 2;
     }
 
     .container {
+      padding: 5rem 0;
       grid-template-columns: 1fr 1fr;
     }
   }
