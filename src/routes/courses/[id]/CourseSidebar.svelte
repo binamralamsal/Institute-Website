@@ -3,7 +3,7 @@
 </script>
 
 <aside class="course-sidebar">
-  <Button size="large" href="https://forms.google.com">
+  <Button size="large">
     Register
     <svg
       class="icon-tabler icon-tabler-arrow-right s-xcnQQNRdRv-M"

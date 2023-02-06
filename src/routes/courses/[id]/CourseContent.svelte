@@ -1,8 +1,6 @@
 <section class="course-description">
   <header>
-    <h1 class="course-title color-heading">
-      Xavier Innovation and Entrepreneurship Bootcamp
-    </h1>
+    <h1 class="course-title color-heading">Complete TypeScript Course</h1>
   </header>
 
   <article>
