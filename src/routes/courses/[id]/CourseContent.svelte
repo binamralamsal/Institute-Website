@@ -1,10 +1,10 @@
 <section class="course-description">
   <header>
-    <h1 class="course-title color-heading">Complete TypeScript Course</h1>
+    <h3 class="course-title color-heading">Complete TypeScript Course</h3>
   </header>
 
   <article>
-    <h2>Course Description</h2>
+    <h3>Course Description</h3>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
@@ -18,7 +18,7 @@
       facilisis.
     </p>
 
-    <h2>What You'll Learn From This Course</h2>
+    <h3>What You'll Learn From This Course</h3>
     <ul>
       <li>
         Neque sodales ut etiam sit amet nisl purus non tellus orci ac auctor
@@ -36,7 +36,7 @@
       </li>
     </ul>
 
-    <h2>Certification</h2>
+    <h3>Certification</h3>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
