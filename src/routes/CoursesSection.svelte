@@ -24,7 +24,7 @@
           duration: "2 weeks",
           image: {
             alt: "Course",
-            src: "/home/course-01.jpg",
+            src: "/courses/course-01.jpg",
           },
           numberOfModules: 20,
           title: "Complete Typescript course",
@@ -37,7 +37,7 @@
           duration: "2 weeks",
           image: {
             alt: "Course",
-            src: "/home/course-02.jpg",
+            src: "/courses/course-02.jpg",
           },
           numberOfModules: 20,
           title: "Complete Bun.js course",
@@ -50,7 +50,7 @@
           duration: "2 weeks",
           image: {
             alt: "Course",
-            src: "/home/course-03.jpg",
+            src: "/courses/course-03.jpg",
           },
           numberOfModules: 20,
           title: "Complete CSS3 course",
@@ -64,7 +64,7 @@
           duration: "2 weeks",
           image: {
             alt: "Course",
-            src: "/home/course-04.jpg",
+            src: "/courses/course-04.jpg",
           },
           numberOfModules: 20,
           title: "Machine Learning A-Z: Hands-On Python and java",
@@ -77,7 +77,7 @@
           duration: "2 weeks",
           image: {
             alt: "Course",
-            src: "/home/course-05.jpg",
+            src: "/courses/course-05.jpg",
           },
           numberOfModules: 20,
           title: "Data Structure and Algorithms",
@@ -90,7 +90,7 @@
           duration: "2 weeks",
           image: {
             alt: "Course",
-            src: "/home/course-06.jpg",
+            src: "/courses/course-06.jpg",
           },
           numberOfModules: 20,
           title: "Rust crash course for beginners",
@@ -101,7 +101,7 @@
     </div>
 
     <div data-aos="fade-up" data-aos-delay="700">
-      <Button href="/" class="view-all-courses-btn">
+      <Button href="/courses" class="view-all-courses-btn">
         View All Courses
         <svg
           xmlns="http://www.w3.org/2000/svg"

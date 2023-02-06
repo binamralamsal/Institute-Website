@@ -11,13 +11,15 @@
 </script>
 
 <div class="card" {...$$restProps}>
-  <a href="/" class="image-link">
+  <a href="/courses/complete-typescript-course" class="image-link">
     <img class="image" src={course.image.src} alt={course.image.alt} />
   </a>
 
   <div class="description">
     <header>
-      <a href="/" class="title"> <h3>{course.title}</h3></a>
+      <a href="/courses/complete-typescript-course" class="title">
+        <h3>{course.title}</h3></a
+      >
     </header>
 
     <ul class="stats">
@@ -62,7 +64,7 @@
 
     <hr class="separator" />
 
-    <a href="/" class="enroll-btn"
+    <a href="/courses/complete-typescript-course" class="enroll-btn"
       >Enroll Now
 
       <svg

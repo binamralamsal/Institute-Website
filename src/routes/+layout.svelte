@@ -12,7 +12,7 @@
 
   import { onMount } from "svelte";
 
-  onMount(async () => {
+  onMount(() => {
     Aos.init({ once: true, duration: 750 });
   });
 
