@@ -18,6 +18,7 @@
   --fs-300: 0.875rem;
   --fs-400: 1rem;
   --fs-500: 1.25rem;
+  --fs-550: 1.5rem;
   --fs-600: 2rem;
   --fs-700: 2.5rem;
   --fs-900: 4rem;
@@ -99,6 +100,7 @@ a:hover {
 @media screen and (max-width: 48em) {
   :root {
     --fs-500: 1.15rem;
+    --fs-550: 1.25rem;
     --fs-600: 1.5rem;
     --fs-700: 2rem;
     --fs-900: 2.5rem;
