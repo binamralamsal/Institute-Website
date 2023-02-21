@@ -10,26 +10,26 @@
   };
 </script>
 
-<div class="card" {...$$restProps}>
-  <a href="/" class="image-link">
-    <img class="image" src={blog.image.src} alt={blog.image.alt} />
+<div {...$$restProps} class="card">
+  <a class="image-link" href="/">
+    <img alt={blog.image.alt} class="image" src={blog.image.src} />
   </a>
 
   <div class="description">
-    <a href="/" class="category">
+    <a class="category" href="/">
       <svg
-        xmlns="http://www.w3.org/2000/svg"
         class="icon icon-tabler icon-tabler-tag"
-        width="18"
-        height="18"
-        viewBox="0 0 24 24"
-        stroke-width="2"
-        stroke="currentColor"
         fill="none"
+        height="18"
+        stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="18"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M0 0h24v24H0z" fill="none" stroke="none" />
         <path
           d="M8.5 8.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0m-3.5 -1.5v3.859c0 .537 .213 1.052 .593 1.432l8.116 8.116a2.025 2.025 0 0 0 2.864 0l4.834 -4.834a2.025 2.025 0 0 0 0 -2.864l-8.117 -8.116a2.025 2.025 0 0 0 -1.431 -.593h-3.859a3 3 0 0 0 -3 3z"
         />
@@ -37,24 +37,24 @@
       <span>{blog.category}</span>
     </a>
     <header>
-      <a href="/" class="title"> <h3>{blog.title}</h3></a>
+      <a class="title" href="/"> <h3>{blog.title}</h3></a>
     </header>
 
     <div class="stats">
       <div class="date-stat">
         <svg
-          xmlns="http://www.w3.org/2000/svg"
           class="icon icon-tabler icon-tabler-calendar"
-          width="18"
-          height="18"
-          viewBox="0 0 24 24"
-          stroke-width="2"
-          stroke="currentColor"
           fill="none"
+          height="18"
+          stroke="currentColor"
           stroke-linecap="round"
           stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="18"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M0 0h24v24H0z" fill="none" stroke="none" />
           <path
             d="M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2zm12 -4l0 4m-8 -4l0 4m-4 4l16 0m-9 4l1 0l0 3"
           />
@@ -62,22 +62,22 @@
         {blog.date.toLocaleDateString()}
       </div>
 
-      <a href="/" class="readmore-btn">
+      <a class="readmore-btn" href="/">
         Read More
 
         <svg
-          xmlns="http://www.w3.org/2000/svg"
           class="icon icon-tabler icon-tabler-arrow-narrow-right"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          stroke-width="2"
-          stroke="currentColor"
           fill="none"
+          height="24"
+          stroke="currentColor"
           stroke-linecap="round"
           stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M0 0h24v24H0z" fill="none" stroke="none" />
           <path d="M5 12l14 0m-4 4l4 -4m-4 -4l4 4" />
         </svg>
       </a>
@@ -90,6 +90,7 @@
     background: white;
     border-radius: var(--radius-400);
     transition: 0.4s;
+      border: 1px solid #eee;
   }
 
   .card:hover {
