@@ -11,12 +11,12 @@
 </script>
 
 <div {...$$restProps} class="card">
-  <a class="image-link" href="/">
+  <a class="image-link" href="/blogs/introduction-to-typescript">
     <img alt={blog.image.alt} class="image" src={blog.image.src} />
   </a>
 
   <div class="description">
-    <a class="category" href="/">
+    <a class="category" href="/blogs/introduction-to-typescript">
       <svg
         class="icon icon-tabler icon-tabler-tag"
         fill="none"
@@ -37,7 +37,7 @@
       <span>{blog.category}</span>
     </a>
     <header>
-      <a class="title" href="/"> <h3>{blog.title}</h3></a>
+      <a class="title" href="/blogs/introduction-to-typescript"> <h3>{blog.title}</h3></a>
     </header>
 
     <div class="stats">
@@ -62,7 +62,7 @@
         {blog.date.toLocaleDateString()}
       </div>
 
-      <a class="readmore-btn" href="/">
+      <a class="readmore-btn" href="/blogs/introduction-to-typescript">
         Read More
 
         <svg
