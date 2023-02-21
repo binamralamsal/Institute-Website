@@ -76,7 +76,7 @@
               ? (activeCurriculum = -1)
               : (activeCurriculum = index)}
         >
-          <h3>{curriculum.title}</h3>
+          <span>{curriculum.title}</span>
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -129,7 +129,8 @@
     line-height: 1.6;
   }
 
-  h3 {
+  h3,
+  .curriculum span {
     font-size: var(--fs-550);
     font-weight: var(--fw-700);
     text-transform: capitalize;
@@ -137,7 +138,7 @@
     margin-bottom: 1.25rem;
   }
 
-  .curriculum h3 {
+  .curriculum span {
     margin-bottom: 0;
     font-size: var(--fs-500);
   }
@@ -181,7 +182,7 @@
     text-align: left;
   }
 
-  .curriculum.active h3,
+  .curriculum.active span,
   .curriculum.active .curriculumBtn {
     color: var(--clr-accent-400);
     transition: 0.3s;
